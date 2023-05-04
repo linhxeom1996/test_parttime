@@ -1,0 +1,38 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"build",
+				"appbundle",
+				"--flavor",
+				"production",
+				"-v"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"label": "flutter: flutter build appbundle",
+			"detail": ""
+		},
+		{
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"build",
+				"apk",
+				"--flavor",
+				"production",
+				"--target-platform",
+				"android-arm",
+				"--split-per-abi",
+				"--analyze-size",
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"label": "flutter: flutter build apk analyze-size",
+			"detail": ""
+		}
+    ]
+}
